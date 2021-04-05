@@ -1,0 +1,133 @@
+
+.timetable_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timetable{
+    width: 80%;
+    margin-top: 50px;
+}
+
+.timetable h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.timetable_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 2px solid var(--text);
+    padding: 10px;
+}
+
+
+
+.timetable_box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.timetable_item .timetable_box:nth-child(1){
+    margin-right: auto;
+}
+
+.timetable_item .timetable_box:nth-child(2){
+    margin-right: 5vw;
+}
+
+.timetable_item .timetable_box:nth-child(1) p{
+    background: var(--index);
+    color: var(--bgrd);
+    padding: 5px;
+    border-radius: 5px;
+}
+.timetable_item .timetable_box:nth-child(1) h5{
+    padding: 3px;
+    font-size: 18px;
+}
+
+.timetable_item .timetable_box:nth-child(2) h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.timetable_item .timetable_box:nth-child(2) a{
+    border: 2px solid var(--index2);
+    color: var(--index2);
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: ease 0.2s;
+}
+
+.timetable_item .timetable_box:nth-child(2) a:hover{
+    background: #000;
+}
+
+.timetable .timetable_item:last-child{
+    border-bottom: 2px solid var(--text);
+}
+
+.timetable_item .timetable_box:nth-child(3){
+    align-items: flex-end;
+}
+
+.timetable_item .timetable_box:nth-child(3) h4{
+    color: var(--index);
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.timetable_item .timetable_box:nth-child(3) p{
+    font-size: 13px;
+}
+
+.timetable_item .timetable_box:nth-child(3) img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .timetable{
+        width: 100%;
+    }
+    .timetable h3{
+        font-size: 20px;
+    }
+    .timetable_item{
+        padding: 0;
+    }
+    .timetable_item .timetable_box:nth-child(1) p{
+        font-size: 13px;
+    }
+    .timetable_item .timetable_box:nth-child(2) h4{
+        font-size: 20px;
+    }
+    .timetable_item .timetable_box:nth-child(2) p{
+        font-size: 12px;
+    }
+    .timetable_item .timetable_box:nth-child(3){
+        align-items: flex-start;
+        width: 100%;
+    }
+}

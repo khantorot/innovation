@@ -1,0 +1,128 @@
+.flex_wrap fieldset{
+    border: 0;
+    border: 2px solid var(--index4);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.flex_wrap input[type="radio"] {
+    position: fixed;
+    left: -100px;
+}
+
+.flex_wrap input:not([type="radio"]) {
+    appearance: none;
+    background: none;
+    border-bottom: 1px solid var(--text);
+    display: block;
+    transition: 300ms ease;
+    max-height: 0;
+    margin: 0px;
+    padding: 0 10px;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    font-size: 15px;
+    outline: 0;
+}
+
+.flex_wrap [id="sign-in"]:checked~input.sign-in,
+.flex_wrap [id="sign-up"]:checked~input.sign-up,
+.flex_wrap [id="reset"]:checked~input.reset {
+    max-height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    opacity: 1;
+    margin-top: 30px;
+}
+
+
+.flex_wrap button{
+    padding: 20px 70px;
+    background: var(--index);
+    color: var(--bgrd);
+    font-weight: 500;
+    border: 2px solid var(--index);
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    position: relative;
+    margin-top: 30px;
+    white-space: nowrap;
+    min-width: 250px;
+}
+
+.flex_wrap button:hover{
+    background: var(--text);
+    border-color: var(--index2);
+    color: var(--index2);
+}
+
+.flex_wrap button:before {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex_wrap [id="sign-in"]:checked~button:before {
+    content: 'Войти';
+}
+
+.flex_wrap [id="sign-up"]:checked~button:before {
+    content: 'Регистрация';
+}
+
+.flex_wrap [id="reset"]:checked~button:before {
+    content: 'Взбросить пароль';
+}
+
+.flex_wrap label {
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--index);
+    transition: ease 0.3s;
+    border: 2px solid var(--index);
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+/* .flex_wrap label:after {
+    content: '';
+    border: 15px solid transparent;
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 15px);
+    transition: inherit;
+} */
+
+.flex_wrap [id="sign-in"]:checked~[for="sign-in"],
+.flex_wrap [id="sign-up"]:checked~[for="sign-up"],
+.flex_wrap [id="reset"]:checked~[for="reset"] {
+    color: var(--index2);
+    border-color: var(--index2);
+}
+
+.flex_wrap [id="sign-in"]:checked~[for="sign-in"]:after,
+.flex_wrap [id="sign-up"]:checked~[for="sign-up"]:after,
+.flex_wrap [id="reset"]:checked~[for="reset"]:after {
+    border-bottom-color: var(--index2);
+}
+
+.flex_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    width: 100%;
+    text-align: center;
+}

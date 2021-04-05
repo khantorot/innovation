@@ -1,0 +1,50 @@
+.contact_boxes{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--index4);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    margin: 0px 10px 10px 0px;
+}
+
+
+.contact_box h4{
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    position: relative;
+    border-bottom: 2px solid var(--index2);
+}
+
+.contact_box a{
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact_box a:hover{
+    color: var(--index2);
+    text-decoration: underline;
+}
+
+.contact_box img{
+    margin: 20px;
+    width: 100px;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .contact_box{
+        width: 100%;
+        margin: 0 0 10px 0px;
+    }
+}
