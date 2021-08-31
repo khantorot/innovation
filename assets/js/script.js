@@ -3,7 +3,7 @@
     let out = '';
 
     for (key in categories) {
-        out += '<a href="./projects.html">' + categories[key].title + '</a>';
+        out += '<a href="./lessons.html">' + categories[key].title + '</a>';
     }
     footer_links.innerHTML = out;
 })();

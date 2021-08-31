@@ -46,49 +46,6 @@
 
 
 
-.video_card_container{
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.video_card{
-    width: 270px;
-    border: 2px solid var(--index4);
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    transition: ease 0.3s;
-    margin: 0px 20px 20px 0px;
-    position: relative;
-}
-
-.video_card:hover{
-    transform: translateY(-5px);
-    border-color: var(--index);
-}
-
-.video_card img{
-    border-radius: 20px;
-    width: 100%;
-}
-
-.video_card h4{
-    margin-top: 10px;
-}
-
-.video_card:hover h4{
-    text-decoration: underline;
-}
-.video_card p{
-    margin-top: auto;
-    font-size: 14px;
-    margin-left: auto;
-}
-
-
 
 
 

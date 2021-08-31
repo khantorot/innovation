@@ -3,14 +3,15 @@
 }
 
 
-nav{
-    background: linear-gradient(0deg, transparent 0%, var(--index3) 100%);
-}
-
 header{
     height: 100vh;
     display: flex;
 }
+
+
+
+
+
 
 #video{
     position: absolute;
@@ -21,9 +22,10 @@ header{
     background: var(--index);
 }
 
+
 #video video{
     height: 120%;
-    opacity: 0.4;
+    opacity: 0.8;
     transition: ease 0.2s;
 }
 
@@ -37,7 +39,7 @@ header{
     right: 100px;
     cursor: pointer;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,11 +81,13 @@ header{
 }
 
 .header_title{
-    max-width: 70%;
+    width: 100%;
+    height: 100%;
     margin-top: auto;
     display: flex;
     position: relative;
     z-index: 1;
+    background: linear-gradient(10deg, var(--index), rgba(0,0,0,0));
 }
 
 .header_title .glide{
@@ -103,6 +107,7 @@ header{
 .header_title .glide__slide h4{
     font-size: 4vw;
     color: var(--bgrd);
+    max-width: 70%;
 }
 
 .header_title .glide__slide a{
@@ -146,9 +151,10 @@ header{
 .card {
     perspective: 1000px;
     transform-style: preserve-3d;
-    width: calc(24vw - 60px);
-    height: calc(24vw - 60px);
+    width: 280px;
+    height: 280px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .card_item {
@@ -174,7 +180,7 @@ header{
 .card_item .text_box h4{
     text-align: center;
     margin-bottom: 15px;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-weight: 500;
     transition: ease-out 0.3s;
     transition-delay: 0.4s;
@@ -199,12 +205,12 @@ header{
     height: 100%;
     overflow: hidden;
     border-radius: 5%;
-    background: var(--index);
+    background: var(--text);
 }
 
 .card_item .img_box img{
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: ease 0.7s;
 }
 
@@ -214,7 +220,7 @@ header{
 }
 .card:hover .text_box p{
     transform: translateZ(60px);
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4);
 }
 .card:hover .text_box h4{
     transform: translateZ(30px);
@@ -223,41 +229,63 @@ header{
 
 
 
-.company_section h5{
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-    max-width: 700px;
+
+
+
+.winner_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 30px 0px;
 }
 
-.company_section h5 a{
-    color: var(--index3);
-    text-decoration: underline;
-}
-
-.company_section h5 a:hover{
-    text-decoration: none;
-}
-
-.company_items{
+.winner_item{
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px 0px;
+    border: 2px solid var(--index4);
+    padding: 20px 30px;
+    margin: 0 20px 20px 0;
+    border-radius: 20px;
 }
 
-.company_items img{
-    padding: 5%;
-    transition: ease 0.4s;
-    width: calc(25% - 30px);
+.winner_item a{
+    width: 100%;
+    margin: 10px 0;
+    text-decoration: underline;
+    font-size: 22px;
+    color: var(--index);
+}
+
+.winner_item a:hover{
+    color: var(--index1);
+    text-decoration: none;
+}
+
+.winner_item p{
+    margin-top: 10px;
 }
 
 
+.winner_item span{
+    margin-left: auto;
+}
 
+.winner_item .img_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
-
-
+.winner_item img{
+    border: 1px solid var(--index4);
+    width: 50%;
+    border-radius: 50%;
+}
 
 
 
@@ -323,68 +351,52 @@ header{
 }
 
 
-.winner_items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px 0px;
+
+
+.company_section h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    max-width: 700px;
 }
 
-.winner_item{
-    width: calc(50% - 15px);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    background: var(--index1);
-    padding: 40px 30px;
-    border-radius: 20px;
-}
-
-.winner_items .winner_item:nth-child(2) {
-    background: var(--index3);
-}
-
-.winner_item a{
-    font-size: 20px;
+.company_section h5 a{
+    color: var(--index3);
     text-decoration: underline;
 }
 
-.winner_item a:hover{
-    color: var(--bgrd);
+.company_section h5 a:hover{
+    text-decoration: none;
 }
 
-.winner_item p{
-    margin-top: 10px;
-}
-
-.winner_item .img_container{
-    width: 100%;
+.company_items{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: flex-start;
-    margin: 10px 0px;
+    justify-content: space-between;
+    padding: 20px 0px;
 }
 
-.winner_item img{
-    border: 1px solid var(--index4);
-    width: calc(25% - 5px);
+.company_items img{
+    padding: 5%;
+    transition: ease 0.4s;
+    width: calc(25% - 30px);
 }
 
 
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .header_title{
         max-width: 100%;
-        padding-bottom: 40px;
-        min-height: 50vh;
+        padding-bottom: 60px;
+        height: auto;
+        background: none;
     }
     .header_title .glide{
         width: 100%;
+        height: auto;
         background: var(--bgrd);
-        margin: 0;
     }
     .header_title .glide__slide{
         padding: 30px 10px;
@@ -392,7 +404,8 @@ header{
     }
     .header_title .glide__slide h4{
         color: var(--text);
-        font-size: 25px;
+        max-width: 100%;
+        font-size: 22px;
     }
     .header_title .glide__slide a{
         color: var(--index1);
@@ -419,9 +432,10 @@ header{
     .card {
         perspective: 1000px;
         transform-style: preserve-3d;
-        width: calc(50vw - 15px);
-        height: calc(50vw - 15px);
+        width: 100vw;
+        height: 80vw;
         margin-bottom: 10px;
+        margin-right: 0;
     }
     
     .card_item .text_box{
@@ -429,23 +443,24 @@ header{
     }
     
     .card_item .text_box h4{
-        font-size: 14px;
+        font-size: 22px;
     }
     
     .card_item .text_box p{
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         border: 1px solid var(--bgrd);
     }
     
     .card_item .img_box img{
-        opacity: 0.2;
+        opacity: 0.3;
     }
 
     .winner_item{
         width: 100%;
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .company_items img{

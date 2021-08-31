@@ -25,7 +25,7 @@ function loadIndex() {
     let out = '';
 
     for(key in categories) {
-        out += '<div class="card"><a href="./webinar.html" class="card_item">';
+        out += '<div class="card"><a href="./lesson.html" class="card_item">';
         out += '<div class="text_box"><h4>'+categories[key].title+'</h4><p>подробнее</p></div>';
         out += '<div class="img_box"><img src="./content/images/'+categories[key].image+'"></div>';
         out += '</a></div>';

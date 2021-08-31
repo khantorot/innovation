@@ -7,7 +7,7 @@
 
 .contact_box{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     border: 1px solid var(--index4);
     border-radius: 10px;
@@ -19,25 +19,26 @@
 
 .contact_box h4{
     text-transform: uppercase;
-    margin-bottom: 16px;
     position: relative;
     border-bottom: 2px solid var(--index2);
+    width: calc(100% - 50px);
 }
 
 .contact_box a{
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 700;
     display: inline-block;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .contact_box a:hover{
     color: var(--index2);
-    text-decoration: underline;
 }
 
 .contact_box img{
-    margin: 20px;
-    width: 100px;
+    width: 40px;
+    margin-left: auto;
 }
 
 

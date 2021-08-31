@@ -93,16 +93,11 @@
     border: 2px solid var(--index);
     padding: 8px 16px;
     border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
-/* .flex_wrap label:after {
-    content: '';
-    border: 15px solid transparent;
-    position: absolute;
-    bottom: -18px;
-    left: calc(50% - 15px);
-    transition: inherit;
-} */
 
 .flex_wrap [id="sign-in"]:checked~[for="sign-in"],
 .flex_wrap [id="sign-up"]:checked~[for="sign-up"],
@@ -125,4 +120,13 @@
     padding: 100px 0px;
     width: 100%;
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .flex_wrap label {
+        font-size: 12px;
+        padding: 5px;
+    }
 }

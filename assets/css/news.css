@@ -81,8 +81,8 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .half .img_container,
@@ -149,13 +149,11 @@
         margin: 0 0 10px 0px;
     }
 
-
-
-    .img_container{
+    .half .img_container{
         width: 100%;
         margin-top: 30px;
     }
-    .text_container{
+    .half .text_container{
         width: 100%;
         position: static;
     }
