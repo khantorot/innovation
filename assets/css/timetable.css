@@ -1,0 +1,159 @@
+.panel{
+    margin-bottom: 0;
+}
+
+
+.timetable_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timetable_block{
+    position: relative;
+    padding-top: 50px;
+}
+
+.timetable_container h3{
+    display: inline-block;
+    color: var(--index2);
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.timetable{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timetable_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid var(--index4);
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.timetable_box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.timetable .timetable_box:nth-child(1) {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.timetable_item .timetable_box:nth-child(2) h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timetable_item .timetable_box:nth-child(2) p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.timetable_item .timetable_box:nth-child(2) a{
+    border: 1px solid var(--index4);
+    color: var(--index);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: ease 0.2s;
+}
+
+
+.timetable_item .timetable_box:nth-child(2) a:hover{
+    background: var(--index3);
+    border-color: var(--index3);
+    color: var(--bgrd);
+}
+
+.timetable_item .timetable_box:nth-child(1) p{
+    border: 1px solid var(--index4);
+    color: var(--text);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.timetable_item .timetable_box:nth-child(1) h5{
+    padding: 3px;
+    font-size: 16px;
+}
+
+
+
+.timetable_item .timetable_box:nth-child(3){
+    margin-top: 20px;
+}
+
+.timetable_item .timetable_box:nth-child(3) h4{
+    color: var(--index);
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.timetable_item .timetable_box:nth-child(3) p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.timetable_item .timetable_box:nth-child(3) p span{
+    font-weight: 700;
+    color: var(--index1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .timetable{
+        width: 100%;
+    }
+    .timetable_item{
+        padding: 20px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .timetable_box{
+        margin: 10px 0;
+    }
+    .timetable_item .timetable_box:nth-child(1) h4{
+        font-size: 18px;
+    }
+    .timetable_item .timetable_box:nth-child(1) p{
+        font-size: 12px;
+    }
+    .timetable_item .timetable_box:nth-child(2) p{
+        font-size: 12px;
+    }
+    .timetable_item .timetable_box:nth-child(3){
+        align-items: flex-start;
+        width: 100%;
+    }
+}

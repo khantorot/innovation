@@ -1,0 +1,121 @@
+.flex_wrap fieldset{
+    border: 0;
+    border: 1px solid var(--index4);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.flex_wrap input[type="radio"] {
+    position: fixed;
+    left: -100px;
+}
+
+.flex_wrap input:not([type="radio"]) {
+    appearance: none;
+    background: none;
+    border-bottom: 1px solid var(--index4);
+    display: block;
+    max-height: 0;
+    margin: 0px;
+    padding: 5px 0!important;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    font-size: 15px;
+    outline: 0;
+}
+
+.flex_wrap [id="sign-in"]:checked~input.sign-in,
+.flex_wrap [id="sign-up"]:checked~input.sign-up,
+.flex_wrap [id="reset"]:checked~input.reset {
+    max-height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    opacity: 1;
+    margin-top: 30px;
+}
+
+
+.flex_wrap button{
+    padding: 15px 30px;
+    background: var(--index);
+    color: var(--bgrd);
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    position: relative;
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.flex_wrap button:hover{
+    background: var(--index1);
+    color: var(--text);
+}
+
+
+.flex_wrap [id="sign-in"]:checked~button:before {
+    content: 'Войти';
+}
+
+.flex_wrap [id="sign-up"]:checked~button:before {
+    content: 'Регистрация';
+}
+
+.flex_wrap [id="reset"]:checked~button:before {
+    content: 'Взбросить пароль';
+}
+
+.flex_wrap label {
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--index);
+    border: 1px solid var(--index4);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+.flex_wrap [id="sign-in"]:checked~[for="sign-in"],
+.flex_wrap [id="sign-up"]:checked~[for="sign-up"],
+.flex_wrap [id="reset"]:checked~[for="reset"] {
+    color: var(--bgrd);
+    border-color: var(--index3);
+    background: var(--index3);
+}
+
+.flex_wrap [id="sign-in"]:checked~[for="sign-in"]:after,
+.flex_wrap [id="sign-up"]:checked~[for="sign-up"]:after,
+.flex_wrap [id="reset"]:checked~[for="reset"]:after {
+    border-bottom-color: var(--index2);
+}
+
+.flex_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    .flex_wrap fieldset{
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .flex_wrap label {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Innovation</title>
+    <link rel="shortcut icon" href="./content/icons/logo.svg">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+</head>
+
+<body>
+    <div id="preloader" class="visible">
+        <div class="banter-loader">
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+        </div>
+    </div>
+    <nav>
+        <a href="./index.html" class="logo">
+            <img src="./content/icons/logo.svg" alt="">
+        </a>
+        <div class="join_btn">
+            <p>Присоединиться</p>
+        </div>
+        <div class="join">
+            <div class="join_items">
+                <h4>Моя миссия в инновации</h4>
+                <div class="form_item_list form_item_list_join">
+                    <label><input type="checkbox" name="volunteer" onclick="onlyOne(this)"><span>Волонтер</span></label>
+                    <label><input type="checkbox" name="partner" onclick="onlyOne(this)"><span>Партнер</span></label>
+                    <label><input type="checkbox" name="maecenas" onclick="onlyOne(this)"><span>Меценат</span></label>
+                    <label><input type="checkbox" name="participant" onclick="onlyOne(this)"><span>Участник
+                            проекта</span></label>
+                    <label><input type="checkbox" name="expert" onclick="onlyOne(this)"><span>Эксперт</span></label>
+                </div>
+                <a href="#sing_in_anchor" class="join_items_link">В команду</a>
+                <a href="./login.html" class="link">Войти</a>
+            </div>
+            <div class="join_contact">
+                <div class="join_contact_box">
+                    <h4>Заходите к нам</h4>
+                    <a href="https://go.2gis.com/ralr6" target="_blank">Бишкек, ул. Фрунзе 429б, 5 этаж</a>
+                </div>
+                <div class="join_contact_box">
+                    <h4>Свяжитесь с нами</h4>
+                    <a href="tel:+996702770727">+ 996 702 77 07 27</a>
+                </div>
+                <div class="join_contact_box">
+                    <h4>Напишите нам</h4>
+                    <a href="mailto:innovation@gmail.com">innovation@gmail.com</a>
+                </div>
+                <div class="join_contact_box">
+                    <h4>Подписаться</h4>
+                    <div class="join_contact_box_follow">
+                        <a href="hhttps://www.facebook.com/%D0%9E%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-119379979978313"
+                            target="_blank"><img src="./content/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://instagram.com/innovation.kg?igshid=1qnlwtitvgdgw" target="_blank"><img
+                                src="./content/icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://twitter.com/odinnovationkg?s=11" target="_blank"><img
+                                src="./content/icons/twitter.svg" alt="twitter"></a>
+                        <a href="https://wa.me/+996702770727?text=Я%20хочу%20вступить%20в%20innovation"
+                            target="_blank"><img src="./content/icons/whatsapp.svg" alt="whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_btn"><span></span></div>
+        <div class="menu">
+            <a href="./lessons.html">Проекты</a>
+            <a href="./timetable.html">Встречи</a>
+            <a href="./about.html">О нас</a>
+            <a href="./news.html">Новости</a>
+            <a href="./contact.html">Контакты</a>
+            <a href="./login.html">Войти</a>
+        </div>
+        <div class="call_btn">
+            <div class="call_block">
+                <span class="call"><img src="./content/icons/mobile.svg" alt="mobile"></span>
+                <div class="networks">
+                    <a href="tel:+996702770727"><img src="./content/icons/phone.svg" alt="phone"></a>
+                    <a href="mailto:innovation@gmail.com"><img src="./content/icons/mail.svg" alt="mail"></a>
+                    <a href="https://wa.me/+996702770727?text=Я%20хочу%20вступить%20в%20innovation" target="_blank"><img
+                            src="./content/icons/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header class="not_index">
+            <h4>Мы вместе инновационно расширяем границы и горизонты</h4>
+        </header>
+        <section>
+            <div class="page_panel">
+                <div class="filter_catolog">
+                    <a href="#aboutus_anchor" class="filter_elem">О нас</a>
+                    <a href="#team_anchor" class="filter_elem">Наша команда</a>
+                    <a href="#goals_anchor" class="filter_elem">Цели</a>
+                    <a href="#values_anchor" class="filter_elem">Ценности</a>
+                    <a href="#mission_anchor" class="filter_elem">Миссия</a>
+                    <a href="#plan_anchor" class="filter_elem">Планы</a>
+                    <a href="./office.html" class="filter_elem">Офисы</a>
+                    <a href="./contact.html" class="filter_elem">Контакты</a>
+                </div>
+            </div>
+        </section>
+        <section class="half">
+            <a name="aboutus_anchor" id="aboutus_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>О нас </h2>
+                <p>Общественное движение Инновация - платформа для граждан, созданная с целью
+                    объединения усилий и решения значимых вопросов. Объединение официально зарегистрировано в
+                    Министерстве юстиции КР от 27 ноября 2020 года.</p>
+                <p>Основателем движения является Чингиз Айдарбеков, дипломат, экс-Министр иностранных
+                    дел Кыргызской Республики, посвятивший 22 года государственной службе, правнук отца-
+                    основателя современной кыргызской государственности Иманалы Айдарбекова.</p>
+                <p>«Вместе мы расширяем горизонты возможностей. Энергия молодости, расширение знаний, четкое
+                    видение и зрелый жизненный опыт в синергии обеспечивают прогресс.».</p>
+            </div>
+            <div class="img_container">
+                <div>
+                    <video src="./content/video/video.mp4" controls></video>
+                </div>
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="half">
+            <a name="team_anchor" id="team_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>Наша команда </h2>
+                <p>Движение создано по инициативе Чингиза Айдарбекова, экс-Министра иностранных дел Кыргызской
+                    Республики,
+                    экс-Советника Президента КР, экс-Посла КР в Японии. Чингиз Айдарбеков кандидат юридических наук,
+                    Чрезвычайный и Полномочный Посол Кыргызской Республики, государственный советник государственной
+                    службы
+                    3 класса. </p>
+                <p>За 22 года государственной службы Чингиз Айдарбеков зарекомендовал себя эффективным государственным
+                    топ
+                    менеджером, проявил лидерские качества, добившись значительных результатов в борьбе с коррупцией в
+                    системе МИД КР, успешно внедрившим цифровизацию в процессы консульского обслуживания, а также
+                    прозрачные, справедливые механизмы в дипломатической кадровой политике. </p>
+            </div>
+            <div class="img_container">
+                <img src="./content/images/team.jpeg" alt="team">
+                <img src="./content/images/team.jpeg" alt="team">
+                <img src="./content/images/team.jpeg" alt="team">
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="half">
+            <a name="goals_anchor" id="goals_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>Цели </h2>
+                <p>Общественное движение «Инновация» создано способствовать построению современного, развитого,
+                    справедливого, процветающего общества.</p>
+                <p>Движение нацелено на обеспечение системной реализации поставленных программ и задач, содействуя
+                    сбалансированному решению общественно значимых вопросов.</p>
+                <p>Движение участвует в развитии общественных институтов, реализации инициативы во всех сферах
+                    общественной
+                    жизни.</p>
+                <ul>
+                    <h4>Мы поддерживаем: </h4>
+                    <li>программы всеобщего повышения уровня образовательных процессов; </li>
+                    <li>программы всеобщего повышения уровня образовательных процессов; </li>
+                    <li>курс на поддержку свободы и разнообразия мнений во всех сферах жизнедеятельности; </li>
+                    <li>курс устойчивого социально-экономического развития страны с акцентом на новые экологически
+                        чистые,
+                        природоохранные технологии и социально ориентированного общества;</li>
+                    <li>раскрытие возможностей для всех членов социума равноправно участвовать в развитии;</li>
+                    <li>усилия по развитию правового государства</li>
+                </ul>
+                <ul>
+                    <h4>Движение содействует построению в Кыргызской Республике общества, основанного на принципах:
+                    </h4>
+                    <li>справедливости;</li>
+                    <li>равенства каждого;</li>
+                    <li>активного гражданского участия; </li>
+                    <li>верховенства правовых норм;</li>
+                    <li>подотчетности государства перед обществом. </li>
+                </ul>
+            </div>
+            <div class="img_container">
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="half">
+            <a name="values_anchor" id="values_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>Наши ценности</h2>
+                <ul>
+                    <h4>Мы приветствуем:</h4>
+                    <li>справедливость, обоснованность в принятии решений;</li>
+                    <li>Защиту прав каждого, свободу человека, социальное равенство и равные возможности для каждого;
+                    </li>
+                    <li>продвижение верховенства права</li>
+                    <li>открытость и подотчетность государственных институтов перед обществом;</li>
+                    <li>cозидательность, постоянное развитие человека</li>
+                    <li>создание условий для развития других;</li>
+                    <li>эффективность в действиях каждого; </li>
+                    <li>остижение результатов с максимальной эффективностью;</li>
+                    <li>инновации и обновление; </li>
+                    <li>взаимное уважение, доверительный диалог. </li>
+                </ul>
+                <p>Движение нацелено на поддержку гражданских инициатив в различных направлениях, таких как: продвижение
+                    образовательных платформ; реализация природоохранных, экологических, органическо-зеленных
+                    экономических,
+                    правовых инициатив, поддержка СМИ, НПО и академических кругов, содействие инициативам в области
+                    здравоохранения, спорта и культуры. </p>
+            </div>
+            <div class="img_container">
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="half">
+            <a name="mission_anchor" id="mission_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>Миссия</h2>
+                <p>Общественное движение «Инновация» объединяет граждан и способствует решению
+                    социально значимых вопросов.</p>
+                <p>Наша миссия – объединять людей, формировать современное общество, в котором гармонично отражены
+                    культурные, традиционные, общепринятые человеческие ценности. </p>
+                <p>Бережное отношение к старшему поколению, пенсионерам является неотъемлемой частью нашей культуры,
+                    традиций и человеческих ценностей. </p>
+                <p>Инновация в каждом человеке через неустанный труд. </p>
+                <p>Движение Инновация содействуют усилению потенциала регионов и местного лидерства, а
+                    также устойчивому социально-экономическому развитию страны с применением инновационных
+                    технологий.</p>
+            </div>
+            <div class="img_container">
+                <img src="./content/images/team.jpeg" alt="team">
+                <img src="./content/images/team.jpeg" alt="team">
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="half">
+            <a name="plan_anchor" id="plan_anchor" class="anchor"></a>
+            <div class="text_container">
+                <h2>Планы </h2>
+                <p>Стремление к воспитанию подрастающих поколений на основе духовности, общечеловеческих ценностях,
+                    нравственности, моральных ценностях. Накопление знаний и навыков. </p>
+                <p>Инновационные подходы в решении социально-экономических проблем, основанных на совмещении
+                    традиционных и
+                    современных знаний и технологий. </p>
+                <p>Уделять внимание защите прав наших соотечественников, находящихся за рубежом временно и на постоянной
+                    основе. Объединяя общество, усиливая образовательные процессы, содействуя развитию производственных
+                    циклов и созданию рабочих мест, поощряя творческое развитие личности, продвигать программы,
+                    способствующие постепенному возвращению соотечественников на Родину. </p>
+                <p>В развитии современного общества важная роль видится в осуществлении социально ориентированных,
+                    сбалансированных общественных процессов, многогранно и гармонично сочетающих накопленные духовные
+                    ценности, традиционные устои, культурное, историческое наследие. </p>
+            </div>
+            <div class="img_container">
+                <img src="./content/images/team.jpeg" alt="team">
+            </div>
+        </section>
+        <section class="feedback_form">
+            <a name="sing_in_anchor" id="sing_in_anchor"></a>
+            <div class="feedback_form_container">
+                <div class="form_block">
+                    <form action="">
+                        <h4>Моя миссия в инновации</h4>
+                        <div class="form_item_list form_item_list_form">
+                            <label><input type="checkbox" name="volunteer"
+                                    onclick="onlyOne(this)"><span>Волонтер</span></label>
+                            <label><input type="checkbox" name="partner"
+                                    onclick="onlyOne(this)"><span>Партнер</span></label>
+                            <label><input type="checkbox" name="maecenas"
+                                    onclick="onlyOne(this)"><span>Меценат</span></label>
+                            <label><input type="checkbox" name="participant" onclick="onlyOne(this)"><span>Участник
+                                    проекта</span></label>
+                            <label><input type="checkbox" name="expert"
+                                    onclick="onlyOne(this)"><span>Эксперт</span></label>
+                        </div>
+                        <input type="text" placeholder="Имя" name="first_name" class="input name_input" required>
+                        <input type="text" placeholder="Фамилия" name="name" class="input" required>
+                        <input type="text" placeholder="Телефон" name="phone" class="input" required>
+                        <input type="text" placeholder="Электронная почта" name="email" class="input" required>
+                        <div class="text_block">
+                            <p>Если вы хотите более активно участвовать в жизни нашего движения, заполните более</p>
+                            <span class="hiden_block_btn">подробную анкету</span>
+                        </div>
+                        <div class="hiden_block">
+                            <h4>Подробный лист</h4>
+                            <label for="old" class="list_select">
+                                <select name="old" id="old">
+                                    <option value="none">Ваш возраст</option>
+                                    <option value="15-25">15 - 25</option>
+                                    <option value="26-40">26 - 40</option>
+                                    <option value="41-55">41 - 55</option>
+                                </select>
+                            </label>
+                            <label for="region" class="list_select">
+                                <select name="region" id="region">
+                                    <option value="none">Ваш регион</option>
+                                    <option value="Бишкек">г. Бишкек</option>
+                                    <option value="Ош">г. Ош</option>
+                                    <option value="Баткенская">Баткенская область</option>
+                                    <option value="Жалал Абадская">Жалал Абадская область</option>
+                                    <option value="Нарынская">Нарынская область</option>
+                                    <option value="Ошская">Ошская область</option>
+                                    <option value="Таласская">Таласская область</option>
+                                    <option value="Чуйская">Чуйская область</option>
+                                    <option value="Иссык Кульская">Иссык Кульская область</option>
+                                </select>
+                            </label>
+                            <label for="interest" class="list_select">
+                                <select name="interest" id="interest">
+                                    <option value="none">Сфера интереса</option>
+                                    <option value="IT">IT</option>
+                                    <option value="Здоровье">Здоровье</option>
+                                    <option value="Образование">Образование</option>
+                                    <option value="Культура">Культура</option>
+                                    <option value="Экономика">Экономика</option>
+                                    <option value="Финансы">Финансы</option>
+                                    <option value="Сельское хозяйство">Сельское хозяйство</option>
+                                    <option value="Благотворительность">Благотворительность</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </label>
+                            <label for="whfmhear" class="list_select">
+                                <select name="whfmhear" id="whfmhear">
+                                    <option value="none">Как вы узнали о нас?</option>
+                                    <option value="Близкие и знакомые">Близкие и знакомые</option>
+                                    <option value="Социальные сети">Социальные сети</option>
+                                    <option value="СМИ">СМИ</option>
+                                    <option value="Другое">Другое</option>
+                                </select>
+                            </label>
+                        </div>
+                        <label class="check"><input type="checkbox" required>Я согласен с условиями обработки <a
+                                href="./docs.html">персональных данныч</a></label>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_box">
+                <h4>Innovation</h4>
+                <a href="./lessons.html">Проекты</a>
+                <a href="./timetable.html">Встречи</a>
+                <a href="./about.html">О нас</a>
+                <a href="./news.html">Новости</a>
+                <a href="./contact.html">Контакты</a>
+                <a href="./login.html">Войти</a>
+            </div>
+            <div class="footer_box">
+                <h4>О нас</h4>
+                <a href="./about.html#team_anchor">Команда</a>
+                <a href="./about.html#goals_anchor">Цели</a>
+                <a href="./about.html#values_anchor">Ценности</a>
+                <a href="./about.html#mission_anchor">Миссия</a>
+                <a href="./about.html#plan_anchor">Планы</a>
+                <a href="./office.html">Офисы</a>
+            </div>
+            <div class="footer_box">
+                <h4>Проекты</h4>
+                <a href="lessons.html#it">Программирование</a>
+                <a href="lessons.html#desing">Дизайн</a>
+                <a href="lessons.html#marketing">Маркетинг</a>
+                <a href="lessons.html#administration">Управление</a>
+            </div>
+            <div class="footer_box">
+                <h4>Контакты</h4>
+                <a href="tel:+996702770727">+ 996 702 77 07 27</a>
+                <a href="https://go.2gis.com/ralr6" target="_blank">Бишкек, ул. Фрунзе 429б, 5 этаж</a>
+                <a href="mailto:innovation@gmail.com">innovation@gmail.com</a>
+                <div class="join_contact_box_follow footer_follow_box">
+                    <a href="hhttps://www.facebook.com/%D0%9E%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-119379979978313"
+                        target="_blank"><img src="./content/icons/facebook.svg" alt="facebook"></a>
+                    <a href="https://instagram.com/innovation.kg?igshid=1qnlwtitvgdgw" target="_blank"><img
+                            src="./content/icons/instagram.svg" alt="instagram"></a>
+                    <a href="https://twitter.com/odinnovationkg?s=11" target="_blank"><img
+                            src="./content/icons/twitter.svg" alt="twitter"></a>
+                    <a href="https://wa.me/+996702770727?text=Я%20хочу%20вступить%20в%20innovation" target="_blank"><img
+                            src="./content/icons/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+            </div>
+            <h5>© Innovation, 2020</h5>
+        </footer>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
